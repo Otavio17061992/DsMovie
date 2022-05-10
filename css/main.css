@@ -1,7 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,900;1,700;1,900&family=Open+Sans:ital,wght@1,500&display=swap');
 
-* {
-    padding: 0 ;
-    margin: 0;
+:root {
+    --color-primary: #4d41c0;
+    --bg-gray: #e8e8e8;
+    --secundary-color:#FFF;
+    
+}
+
+* { 
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    background-color: var(--bg-gray);
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    background: var(--color-primary);
+    color: var(--secundary-color);    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
